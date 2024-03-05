@@ -1,0 +1,123 @@
+video{
+ object-fit:cover;
+ width:90%;
+height:100%;
+position:fixed;
+z-index:-1;
+
+}
+.hero-container{
+/*background: url('images/download.jpg') center center/cover no-repeat;
+ viewport height % wise 100% 100 pixels full viewport*/
+ width:100%;
+ height:100vh;
+ justify-content: center;
+ display:flex;
+ flex-direction: column;
+ align-items:  center;
+ box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
+object-fit:contain;
+/* Example value for margin-left */
+ /* Example value for margin-right */
+
+}
+/*
+z-index:-1 so that it doesnot override anyother object*/
+/* HeroSection.css */
+.hero-container h1 {
+    /* Styles for h1 within .hero-container */
+    color: #fff7f7; /* White text color */
+    font-size: 80px; /* Font size */
+    margin-top: -100px; /* Bottom margin */
+  }
+  
+  .hero-container p {
+    /* Styles for p within .hero-container */
+    color: #ffffff; /* White text color */
+    font-size: 39px; /* Font size */
+    margin-top: 8px; /* Bottom margin */
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans","Arial",sans-serif;
+  }
+  
+  .hero-btns {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .hero-btns btn{
+     /* White text color */
+ 
+    margin: 6px;
+  }
+
+  .fa-play-circle{
+
+    margin-left:4px;
+  }
+  .btns {
+    border-radius: 4px;
+    background: transparent;
+    border: 4.5px solid #fff; /* White border */
+    color: #000000; /* White text color */
+    /* Make the font bold */
+   
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Arial", sans-serif;
+    padding: 10px 20px;
+    margin-right: 20px;
+    font-weight: 700; /* Explicitly set font weight to bold */
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  
+  .btns:hover {
+    background: #fff; /* White background color on hover */
+    color: #6e46ae; /* Purple text color on hover */
+    border: 4.5px solid #fff; /* White border */
+    font-weight: 700; /* Explicitly set font weight to bold */ /* Make the font bold */
+  }
+  
+  .btns--primary {
+    background: #fff; /* White background color */
+    color: #6e46ae; /* Purple text color */
+    border: 4.5px solid #fff; /* White border */
+    font-weight: 700; /* Explicitly set font weight to bold */
+     /* Make the font bold */
+  }
+  
+  .btns--outline {
+    background: transparent;
+    color: #fff; /* White text color */
+    border: 4.5px solid #fff; /* White border */
+  
+    font-weight: 700; /* Explicitly set font weight to bold */ /* Make the font bold */
+  }
+  
+ @media screen and (max-width:960px)
+ {
+.hero-container >h1{
+  font-size: 70px;
+  margin-top:-150px;
+}
+
+ }
+ @media screen and (max-width:768px)
+ {
+.hero-container >h1{
+  font-size: 50px;
+  margin-top:-100px;
+}
+.hero-container >p{
+
+ font-size:30px;
+
+}
+.btn-mobile{
+display:block;
+text-decoration: none;
+}
+.btn{
+    width:100%;
+}
+ }
+
+
